@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<button onclick="logout()">logout</button>
+	<button onclick="getInfo()">getInfo</button>
+	<button onclick="getUsers()">getUsers</button>
+	<button onclick="getManagers()">getManagers</button>
+	<button onclick="getLawenforceDepartments()">getLawenforceDepartments</button>
+	<script type="text/javascript" src="/assets/js/jquery.min.js?v=2.1.4"></script>
+	<script type="text/javascript" src="/service/ajax.service.js"></script>
+	<script type="text/javascript" src="/service/global.service.js"></script>
+	<script type="text/javascript">
+		var departmentJson;
+		var managerJson;
+		function logout() {
+			localStorage.removeItem('token');
+			alert('logout success!');
+		};
+		function getInfo() {
+			var url = 'http://localhost:8080/api/profile-info';
+			$.ajax({
+			    url: url,
+			    type:'GET',
+			    error: function() {
+			      // error handler
+			    },
+			    success: function(data) {
+			    	alert(JSON.stringify(data));
+			   	}
+			});
+		};
+		function getUsers() {
+			var url = 'http://localhost:8080/api/users';
+			$.ajax({
+			    url: url,
+			    type:'GET',
+			    error: function() {
+			      // error handler
+			    },
+			    success: function(data) {
+			    	alert(JSON.stringify(data));
+			   	}
+			});
+		};
+		function getManagers() {
+			var url = 'http://localhost:8080/api/managers';
+			$.ajax({
+			    url: url,
+			    type:'GET',
+			    async: false,
+			    error: function() {
+			      // error handler
+			    },
+			    success: function(data) {
+			    	managerJson = data;
+			   	}
+			});
+			console.log(managerJson);
+		};
+		function getLawenforceDepartments() {
+			var url = window.apiPoint + 'lawenforce-departments';
+			$.ajax({
+			    url: url,
+			    type:'GET',
+			    async: false,
+			    error: function() {
+			      // error handler
+			    },
+			    success: function(data) {
+			    	departmentJson = data;
+			   	}
+			});
+			console.log(departmentJson);
+		};
+	</script>
+</body>
+</html>

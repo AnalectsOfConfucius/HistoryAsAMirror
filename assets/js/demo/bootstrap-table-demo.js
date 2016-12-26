@@ -154,7 +154,7 @@ function buildTable($el, cells, rows) {
   // -------------------------------
   (function() {
     $('#exampleTableToolbar').bootstrapTable({
-      url: "js/demo/bootstrap_table_test2.json",
+      url: "/js/demo/bootstrap_table_test2.json",
       search: true,
       showRefresh: true,
       showToggle: true,
@@ -174,17 +174,15 @@ function buildTable($el, cells, rows) {
   // ------------------------------
   (function() {
     $('#exampleTableEvents').bootstrapTable({
-      url: "js/demo/bootstrap_table_test.json",
+      url: "/js/demo/bootstrap_table_test.json",
       search: true,
       pagination: true,
       showRefresh: true,
-      showToggle: true,
       showColumns: true,
       iconSize: 'outline',
       toolbar: '#exampleTableEventsToolbar',
       icons: {
         refresh: 'glyphicon-repeat',
-        toggle: 'glyphicon-list-alt',
         columns: 'glyphicon-list'
       }
     });
