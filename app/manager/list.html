@@ -11,7 +11,7 @@
     <link href="/assets/css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="/assets/css/animate.min.css" rel="stylesheet">
     <link href="/assets/css/style.min.css?v=4.0.0" rel="stylesheet">
-    <link href="/assets/css/pagination.css" rel="stylesheet" >
+    <link href="/assets/css/pagination.css" rel="stylesheet">
     <!-- Sweet Alert -->
     <link href="/assets/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
     <!-- 引用控制层插件样式 -->
@@ -25,121 +25,154 @@
                 <div class="ibox-title">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
-                            <label style="font-size:14px">用户名：</label>
-                            <select style="width:150px; height:32px; margin-top:2px">
+                            <label style="font-size:14px">所属工商所：</label>
+                            <select style="width:150px; height:32px; margin-top:2px; margin-right: 5px;">
                                 <option></option>
                                 <option></option>
                                 <option></option>
                                 <option></option>
                                 <option></option>
                             </select>
-                            <input type="text" style="height:32px">
-                            <input type="text" style="height:32px">
-                            <input type="text" style="height:32px">
+                            <label style="font-size:14px">执法区域：</label>
+                            <select style="width:150px; height:32px; margin-top:2px; margin-right: 5px;">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <label style="font-size:14px">黑白名单：</label>
+                            <select style="width:150px; height:32px; margin-top:2px; margin-right: 5px;">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <label style="font-size:14px">用户姓名：</label>
                             <input type="text" style="height:32px">
                             <button type="button" class="btn btn-primary pull-right">搜索</button>
                         </div>
                     </div>
                 </div>
                 <div class="ibox-content">
-                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal0_1">添加
+                    <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#myModal0">添加
                     </button>
                     <table class="table table-bordered">
                         <thead>
                         <tr>
                             <th>编号</th>
-                            <th>酒店名称</th>
-                            <th>更新时间</th>
-                            <th>商户类型</th>
-                            <th>星级</th>
-                            <th>联系人</th>
-                            <th>联系电话</th>
+                            <th>证件编号</th>
+                            <th>证件类型</th>
+                            <th>执法姓名</th>
+                            <th>性别</th>
+                            <th>执法机关</th>
+                            <th>执法区域</th>
+                            <th>黑白名单</th>
+                            <th>检查企业数量</th>
+                            <th>说明</th>
                             <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
                                 <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">删除</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
+                                <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">删除</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
+                                <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">删除</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
+                                <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">删除</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
+                                <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2015041616</td>
-                            <td>永庆弯酒店</td>
+                            <td>HN-WN0806113(A)</td>
+                            <td>海南省行政执法证</td>
                             <td>2015-04-16</td>
-                            <td> 酒店</td>
-                            <td>5星</td>
-                            <td>游小美</td>
-                            <td>1510894542</td>
+                            <td>苏德存</td>
+                            <td>男</td>
+                            <td>住建局</td>
+                            <td>万宁</td>
+                            <td>白名单</td>
+                            <td>22</td>
+                            <td>正常人员</td>
                             <td>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal0">查看</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal">修改</a>
-                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">删除</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal1">查看</a>
+                                <a href="javascript:;" data-toggle="modal" data-target="#myModal2">修改</a>
+                                <a href="javascript:;" class="delete-action">删除</a>
                             </td>
                         </tr>
                         </tbody>
@@ -160,56 +193,65 @@
         </div>
     </div>
 </div>
-<!-- 2016-4-7 add -->
-
 <!--添加 S-->
-<div class="modal fade" id="myModal0_1" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
+<div class="modal fade" id="myModal0" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-worppar">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="h5Class">添加商户信息</h2>
+                <h2 class="h5Class">添加执法人员信息</h2>
                 <a type="button" class="btn btn-primary" data-dismiss="modal"
                    style="position:absolute; right: 31px; top: 10px;">关闭</a>
                 <div class="ibox-content">
                     <form class="form-horizontal m-t" novalidate="novalidate">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户名称：</label>
+                            <label class="col-sm-2 control-label">姓名：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
                                        aria-required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户简介：</label>
-                            <div class="col-sm-10">
-                                <textarea id="ccomment" name="comment" class="form-control" required
-                                          aria-required="true"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">商户地址：</label>
+                            <label class="col-sm-2 control-label">证件编号：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
                                        aria-required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户星级：</label>
+                            <label class="col-sm-2 control-label">证件类型：</label>
+                            <div class="col-sm-10">
+                                <input name="name" minlength="1" type="text" class="form-control" required
+                                       aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">所属工商局：</label>
                             <div class="col-sm-10">
                                 <select class="form-control m-b" name="account">
-                                    <option>三星级</option>
-                                    <option>四星级</option>
-                                    <option>五星级</option>
-                                    <option>六星级</option>
+                                    <option></option>
+                                    <option>万宁市本局</option>
+                                    <option>地方局</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">联 系 人：</label>
+                            <label class="col-sm-2 control-label">执法区域：</label>
                             <div class="col-sm-10">
-                                <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                <select class="form-control m-b" name="account">
+                                    <option></option>
+                                    <option>万宁市</option>
+                                    <option>地方</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">黑白名单：</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account">
+                                    <option></option>
+                                    <option>黑名单</option>
+                                    <option>白名单</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -219,42 +261,14 @@
                                        aria-required="true">
                             </div>
                         </div>
-                    </form>
-                    <div id="demo" class="demo col-sm-10">
-                        <form id="uploadForm" action="'+para.url+'" method="post" enctype="multipart/form-data">
-                            <div class="upload_box">
-                                <div class="upload_main">
-                                    <div class="upload_choose">
-                                        <div class="convent_choice">
-                                            <div class="andArea">
-                                                <div class="filePicker">点击选择文件</div>
-                                                <input id="fileImage" type="file" size="30" name="fileselect[]"
-                                                '+multiple+'>
-                                            </div>
-                                        </div>
-                                        <span id="fileDragArea" class="upload_drag_area"><img src="/assets/img/p1.jpg" alt=""
-                                                                                              height="100"><img
-                                            src="/assets/img/p2.jpg" alt="" height="100"><img src="/assets/img/p3.jpg" alt=""
-                                                                                      height="100"><img src="/assets/img/p1.jpg"
-                                                                                                        alt=""
-                                                                                                        height="100"></span>
-                                    </div>
-                                    <div class="status_bar">
-                                        <div id="status_info" class="info">选中0张文件，共0B。</div>
-                                        <div class="btns">
-                                            <div class="webuploader_pick">继续选择</div>
-                                            <div class="upload_btn">开始上传</div>
-                                        </div>
-                                    </div>
-                                    <div id="preview" class="upload_preview"></div>
-                                </div>
-                                <div class="upload_submit">
-                                    <button type="button" id="fileSubmit" class="upload_submit_btn">确认上传文件</button>
-                                </div>
-                                <div id="uploadInf" class="upload_inf"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">备注信息：</label>
+                            <div class="col-sm-10">
+                                <textarea id="comment" name="comment" class="form-control" required
+                                          aria-required="true"></textarea>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                     <div class="form-group">
                         <div class="col-sm-4 col-sm-offset-2 pb20">
                             <a class="btn btn-primary" type="submit">保存</a>
@@ -264,72 +278,82 @@
 
             </div>
         </div>
-
     </div>
 </div>
 <!--添加 E-->
 <!--查看 S-->
-<div class="modal fade" id="myModal0" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal1" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-worppar">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="h5Class">修改商户信息</h2>
+                <h2 class="h5Class">添加执法人员信息</h2>
                 <a type="button" class="btn btn-primary" data-dismiss="modal"
                    style="position:absolute; right: 31px; top: 10px;">关闭</a>
                 <div class="ibox-content">
                     <form class="form-horizontal m-t" novalidate="novalidate">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户名称：</label>
+                            <label class="col-sm-2 control-label">姓名：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                       aria-required="true" disabled>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户简介：</label>
-                            <div class="col-sm-10">
-                                <textarea id="ccomment" name="comment" class="form-control" required
-                                          aria-required="true"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">商户地址：</label>
+                            <label class="col-sm-2 control-label">证件编号：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                       aria-required="true" disabled>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户星级：</label>
+                            <label class="col-sm-2 control-label">证件类型：</label>
                             <div class="col-sm-10">
-                                <select class="form-control m-b" name="account">
-                                    <option>三星级</option>
-                                    <option>四星级</option>
-                                    <option>五星级</option>
-                                    <option>六星级</option>
+                                <input name="name" minlength="1" type="text" class="form-control" required
+                                       aria-required="true" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">所属工商局：</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account" disabled>
+                                    <option></option>
+                                    <option>万宁市本局</option>
+                                    <option>地方局</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">联 系 人：</label>
+                            <label class="col-sm-2 control-label">执法区域：</label>
                             <div class="col-sm-10">
-                                <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                <select class="form-control m-b" name="account" disabled>
+                                    <option></option>
+                                    <option>万宁市</option>
+                                    <option>地方</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">黑白名单：</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account" disabled>
+                                    <option></option>
+                                    <option>黑名单</option>
+                                    <option>白名单</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">联系电话：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                       aria-required="true" disabled>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <div class="col-sm-4 col-sm-offset-2">
-                                <a class="btn btn-primary" type="submit">保存</a>
-
-
+                            <label class="col-sm-2 control-label">备注信息：</label>
+                            <div class="col-sm-10">
+                                <textarea id="ccomment" name="comment" class="form-control" required
+                                          aria-required="true" disabled></textarea>
                             </div>
                         </div>
                     </form>
@@ -339,54 +363,65 @@
     </div>
 </div>
 <!--查看 E-->
-<!--  修改（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
+<!--修改 S-->
+<div class="modal fade" id="myModal2" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-worppar">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="h5Class">修改商户信息</h2>
+                <h2 class="h5Class">添加执法人员信息</h2>
                 <a type="button" class="btn btn-primary" data-dismiss="modal"
                    style="position:absolute; right: 31px; top: 10px;">关闭</a>
                 <div class="ibox-content">
                     <form class="form-horizontal m-t" novalidate="novalidate">
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户名称：</label>
+                            <label class="col-sm-2 control-label">姓名：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
                                        aria-required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户简介：</label>
-                            <div class="col-sm-10">
-                                <textarea id="ccomment" name="comment" class="form-control" required
-                                          aria-required="true"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">商户地址：</label>
+                            <label class="col-sm-2 control-label">证件编号：</label>
                             <div class="col-sm-10">
                                 <input name="name" minlength="1" type="text" class="form-control" required
                                        aria-required="true">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">商户星级：</label>
+                            <label class="col-sm-2 control-label">证件类型：</label>
+                            <div class="col-sm-10">
+                                <input name="name" minlength="1" type="text" class="form-control" required
+                                       aria-required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">所属工商局：</label>
                             <div class="col-sm-10">
                                 <select class="form-control m-b" name="account">
-                                    <option>三星级</option>
-                                    <option>四星级</option>
-                                    <option>五星级</option>
-                                    <option>六星级</option>
+                                    <option></option>
+                                    <option>万宁市本局</option>
+                                    <option>地方局</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">联 系 人：</label>
+                            <label class="col-sm-2 control-label">执法区域：</label>
                             <div class="col-sm-10">
-                                <input name="name" minlength="1" type="text" class="form-control" required
-                                       aria-required="true">
+                                <select class="form-control m-b" name="account">
+                                    <option></option>
+                                    <option>万宁市</option>
+                                    <option>地方</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">黑白名单：</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account">
+                                    <option></option>
+                                    <option>黑名单</option>
+                                    <option>白名单</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -396,89 +431,26 @@
                                        aria-required="true">
                             </div>
                         </div>
-                        <div class="demo col-sm-10">
-                            <form action="'+para.url+'" method="post" enctype="multipart/form-data">
-                                <div class="upload_box">
-                                    <div class="upload_main">
-                                        <div class="upload_choose">
-                                            <div class="convent_choice">
-                                                <div class="andArea">
-                                                    <div class="filePicker">点击选择文件</div>
-                                                    <input id="fileImage" type="file" size="30" name="fileselect[]"
-                                                    '+multiple+'>
-                                                </div>
-                                            </div>
-                                            <span class="upload_drag_area"><img src="/assets/img/p1.jpg" alt=""
-                                                                                height="100"><img src="/assets/img/p2.jpg"
-                                                                                                  alt=""
-                                                                                                  height="100"><img
-                                                src="/assets/img/p3.jpg" alt="" height="100"><img src="/assets/img/p1.jpg" alt=""
-                                                                                          height="100"><img
-                                                src="/assets/img/p1.jpg" alt="" height="100"><img src="/assets/img/p1.jpg" alt=""
-                                                                                          height="100"></span>
-                                        </div>
-                                        <div class="status_bar">
-                                            <div class="info">选中0张文件，共0B。</div>
-                                            <div class="btns">
-                                                <div class="webuploader_pick">继续选择</div>
-                                                <div class="upload_btn">开始上传</div>
-                                            </div>
-                                        </div>
-                                        <div class="upload_preview"></div>
-                                    </div>
-                                    <div class="upload_submit">
-                                        <button type="button" class="upload_submit_btn">确认上传文件</button>
-                                    </div>
-                                    <div class="upload_inf"></div>
-                                </div>
-                            </form>
-                        </div>
                         <div class="form-group">
-                            <div class="col-sm-4 col-sm-offset-2 pb20">
-                                <a class="btn btn-primary" type="submit">保存</a>
-
-
+                            <label class="col-sm-2 control-label">备注信息：</label>
+                            <div class="col-sm-10">
+                                <textarea id="comment11" name="comment" class="form-control" required
+                                          aria-required="true"></textarea>
                             </div>
                         </div>
                     </form>
-
-
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-2 pb20">
+                            <a class="btn btn-primary" type="submit">保存</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 </div>
-<!-- （修改 （Modal））  -->
-<!--  删除（Modal） -->
-<div class="modal fade" id="myModal2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog custom_modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">是否删除 <span data-dismiss="modal"><Img
-                    src="/assets/img/close.png"></span></h4>
-            </div>
-            <div class="modal-body wilq">
-                <div class="modal-body-img">
-                    <img src="/assets/img/11.png">
-                </div>
-                <div class="modal-body-p">
-                    <p>你确定要删除吗？</p>
-                    <p>如果是请点击"确定"，否则点"取消"</p>
-                    <p class="add_button">
-                        <button type="button" class="btn btn-primary qd"
-                                data-dismiss="modal">确定
-                        </button>
-                        <button type="button" class="btn btn-primary qx"
-                                data-dismiss="modal">取消
-                        </button>
-                    </p>
-                </div>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
-<!-- 删除 （Modal） -->
+<!--修改 E-->
 <style>
     .fileWopr {
         width: 600px;
@@ -580,17 +552,28 @@
 <script src="/assets/js/content.min.js?v=1.0.0"></script>
 <script src="/assets/js/jquery.pagination.js"></script>
 <script src="/assets/js/plugins/sweetalert/sweetalert.min.js"></script>
-
 <script>
     $("#Pagination").pagination("150");
-    $('.delete-action').click(function() {
+    $('.delete-action').click(function () {
         swal({
-            title: "太帅了",
-            text: "小手一抖就打开了一个框",
-            type: "success"
-        });
+                title: "您确定要删除这条信息吗",
+                text: "删除后将无法恢复，请谨慎操作！",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "是的，我要删除！",
+                cancelButtonText: "让我再考虑一下…",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            },
+            function (isConfirm) {
+                if (isConfirm) {
+                    swal("删除成功！", "您已经永久删除了这条信息。", "success");
+                } else {
+                    swal("已取消", "您取消了删除操作！", "error");
+                }
+            });
     });
 </script>
-
 </body>
 </html>
